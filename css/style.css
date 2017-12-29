@@ -1,0 +1,403 @@
+body{	
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/** fonts **/
+
+@font-face {
+    font-family: 'actobook';
+    src: url('/especiales/dia-de-la-madre/fonts/acto-book-webfont.woff2') format('woff2'),
+         url('/especiales/dia-de-la-madre/fonts/acto-book-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'actosemibold';
+    src: url('/especiales/dia-de-la-madre/fonts/acto-semibold-webfont.woff2') format('woff2'),
+         url('/especiales/dia-de-la-madre/fonts/acto-semibold-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'actobold';
+    src: url('/especiales/dia-de-la-madre/fonts/acto-bold-webfont.woff2') format('woff2'),
+         url('/especiales/dia-de-la-madre/fonts/acto-bold-webfont.woff') format('woff');
+}
+
+
+.clear{
+    clear: both;
+}
+
+#header{
+    background: #db0848;
+    padding-bottom: 50px;
+    width: 100%;
+}
+    .header-comercio{ 
+        background: #000;
+        height: 40px;
+        margin: 0 auto;
+        padding: 5px 0;
+        top: 0;
+        width: 100%;
+        z-index: 10;  
+    }
+        .ctn-header-comercio{
+            margin: 0 auto;
+            max-width: 980px;
+        }
+        a.logo-comercio{
+            background: url(/especiales/dia-de-la-madre/img/logo-especial.png) no-repeat 0 0;
+            background-size: 100%;
+            display: block;
+            float: left;
+            height: 35px;
+            text-indent: -99999px;
+            width: 150px;
+        }               
+            #social{
+                float: right;
+            }
+                #social ul{
+                    display: inline-block;
+                    margin: 0 auto;
+                    padding: 0;
+                    vertical-align: middle;
+                }
+                    #social ul li{
+                        display: inline-block;
+                        margin: 0 3px;
+                        vertical-align: middle;
+                    }
+                        #social ul li a{
+                            display: block;
+                            height: 36px;
+                            width: 36px;
+                        }
+                            #social ul li a.facebook{
+                                background: url(/especiales/dia-de-la-madre/img/sprite-redes.png) no-repeat 0 0;  
+                                background-size: 75px; 
+                                text-indent: -9999px;                         
+                            }
+                            #social ul li a.tw{
+                                background: url(/especiales/dia-de-la-madre/img/sprite-redes.png) no-repeat -37px 0;  
+                                background-size: 75px;     
+                                text-indent: -9999px;                     
+                            }
+
+.ctn-header{
+    background: url(/especiales/dia-de-la-madre/img/corazones-header.png) no-repeat 70px 20px;  
+    background-size: 90%;
+    margin: 0 auto;
+    max-width: 980px;
+    padding-top: 100px;
+}
+    .ctn-header h1{
+        background: url(/especiales/dia-de-la-madre/img/titulo.png) no-repeat 0 0;  
+        display: block;
+        height: 145px;
+        margin: 0 auto;
+        text-indent: -999999px;
+        width: 700px;
+    } 
+    .ctn-header h2{
+        color: #fff;
+        font: 24px/28px 'actosemibold';
+        margin: 0 auto;
+        max-width: 600px;
+        padding: 25px 0;
+        text-align: center;
+    }    
+
+.contenedor{
+    background: #db0848;
+    padding-bottom: 120px;
+    position: relative;
+    width: 100%;
+}
+    .box-foto{
+        height: 550px;
+        margin: 0 auto;
+        position: relative;
+        width: 980px;
+        z-index: 20;
+    }
+        .main-slider{
+            /*background: url(/especiales/dia-de-la-madre/img/bg-slider.png) no-repeat 0 0;*/
+            height: 600px;
+            width: 980px;
+        }      
+            .slider img{
+                margin: 0 auto;
+            }
+        .box-image-upload{
+            border: none;
+            height: 549px;
+            margin: 0 auto;
+            width: 980px;     
+        }
+    .pattern{
+        background: url(/especiales/dia-de-la-madre/img/bg-pattern.png) repeat; 
+        height: 500px; 
+        position: absolute;
+        top: 50px;
+        width: 100%;
+    }        
+            .main-slider textarea{
+                border: none;
+                font: 21px/24px 'actosemibold';  
+                overflow: hidden;              
+                position: absolute;
+                resize: none;        
+                text-align: center;                      
+            }
+                #tarjeta-1 textarea{
+                    height: 90px;
+                    right: 50px;
+                    top: 148px;
+                    width: 280px; 
+                }
+                #tarjeta-2 textarea{
+                    background: #d62b78;
+                    color: #fff;
+                    height: 90px;
+                    left: 300px;
+                    top: 30px;
+                    width: 375px;
+                }
+                    #tarjeta-2 textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                      color: #fff;
+                    }
+                    #tarjeta-2 textarea::-moz-placeholder { /* Firefox 19+ */
+                      color: #fff;
+                    }
+                    #tarjeta-2 textarea:-ms-input-placeholder { /* IE 10+ */
+                      color: #fff;
+                    }
+                    #tarjeta-2 textarea:-moz-placeholder { /* Firefox 18- */
+                      color: #fff;
+                    }
+                #tarjeta-3 textarea{
+                    background: #fff;
+                    color: #000;
+                    height: 105px;
+                    left: 10px;
+                    top: 115px;
+                    width: 270px;
+                }
+
+.slick-next,
+.slick-prev{
+    display: none !important;
+}
+.slick-dots{
+    bottom: -40px !important;
+}
+
+ul.descarga{
+    list-style-type: none;
+    margin-top: 50px;
+    padding: 0;
+    text-align: right;
+}
+    li.boton{
+        background: url(/especiales/dia-de-la-madre/img/btn-descargar.png) no-repeat;
+        display: inline-block;
+        height: 45px;
+        vertical-align: top;
+        width: 185px; 
+    }
+.box-main-texto{
+    background: #fff;
+    width: 100%;
+}
+    .banner-clasificados{
+        display: block;
+        margin: 0 auto;
+        padding-top: 50px;
+    }
+    .ctn-box-main-texto{
+        margin: 0 auto;
+        margin-bottom: 50px;
+        padding-top: 60px;
+        width: 980px;
+    }
+        .box-texto{
+            display: inline-block;
+            vertical-align: top;
+            width: 485px;
+        }
+            .box-texto h3{
+                color: #db0848;
+                font: 36px/38px 'actobold';
+                margin: 0 auto 10px;
+            }
+            .box-texto h4{
+                color: #3d454b;
+                font: 18px/22px 'actosemibold';
+                margin: 0 auto 20px;
+            }
+            .box-texto p{
+                color: #3d454b;
+                font: 18px/26px 'actobook';
+                margin: 0 auto 20px;
+            }
+                .box-texto p span{
+                    color: #db0848;
+                    font-family: 'actosemibold';
+                }
+            img.mama-1{
+                display: inline-block;
+                margin: 0 auto;
+                vertical-align: top;
+                width: 45%;                
+            }
+            img.mama-2{
+                display: inline-block;
+                margin: 0 auto;
+                margin-top: 85px;
+                vertical-align: top;
+                width: 53%;                
+            }
+            img.mama-3{
+                display: inline-block;
+                margin: 0 auto;
+                margin-top: 80px;
+                vertical-align: top;
+                width: 45%;                
+            }
+            img.mama-4{
+                display: inline-block;
+                margin: 0 auto;
+                vertical-align: top;
+                width: 50%;                
+            }
+        .derecha{
+            float: right;
+        }
+
+.box-main-footer{
+    background: #db0848;
+    padding-bottom: 40px;
+    padding-top: 50px;
+}
+    .ctn-box-footer{
+        margin: 0 auto;
+        text-align: center;
+        width: 490px;
+    }
+        .ctn-box-footer h5{
+            color: #fff;
+            font: 15px/20px 'actobook';
+            margin: 0 auto;
+            padding-bottom: 20px;
+            text-transform: uppercase;
+        }
+        .ctn-box-footer h6{
+            color: #ffcb08;
+            font: 17px/20px 'actobold';
+            margin: 0 auto;
+            padding-bottom: 10px;
+        }
+            .ctn-box-footer h6 span{
+                color: #fff;
+                font-family: 'actobook';
+            }
+
+span.instrucciones{
+    color: #ffcb08;
+    display: block;
+    font: 24px/36px 'actosemibold';
+    text-align: center;    
+}
+
+.movil{
+    display: none;
+}
+
+@media screen and (max-width: 1366px) {
+
+}
+@media screen and (max-width: 1280px) {
+
+}
+@media screen and (max-width: 1024px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    #header,
+    .contenedor,
+    .box-main-texto,
+    .box-main-footer{
+        display: none;
+    }
+
+    .movil{
+        background: #db0848;
+        display: block;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }    
+        span.titulo-movil{
+            background: url(/especiales/dia-de-la-madre/img/titulo.png) no-repeat 0 0;
+            background-size: 100%;
+            display: block;
+            height: 100px;
+            margin: 0 auto;
+            margin-top: 120px;
+            width: 414px;
+        }
+        .movil p{
+            color: #ffcb08;
+            font: 28px/34px'actobold';  
+            margin: 0 auto;
+            text-align: center;
+        }
+    
+
+}
+
+@media screen and (max-width: 640px) {     
+}
+
+
+@media screen and (max-width: 480px) {
+  
+}
+
+@media screen and (max-width: 375px) {
+
+
+}
+
+@media screen and (max-width: 320px) {
+
+}
+
+/** monitor Comercio **/
+@media only screen and (min-height: 900px) {
+
+}
+
+/** monitor 768px alto **/
+@media only screen and (min-height: 760px) {
+
+}
+
+/** monitor 900px alto **/
+@media only screen and (min-height: 1024px) {
+
+}
+
+/** monitor 1024px alto **/
+@media only screen and (min-height: 1024px) {
+
+}
+
+
